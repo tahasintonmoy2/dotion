@@ -9,9 +9,9 @@ import { cn } from '@/lib/utils';
 import { FileIcon } from 'lucide-react';
 
 interface DocumentListProps {
-    parentDocumentId: Id<"documents">;
-    level: number;
-    data: Doc<"documents">[];
+    parentDocumentId?: Id<"documents">;
+    level?: number;
+    data?: Doc<"documents">[];
 }
 
 const DocumentList = ({
@@ -81,8 +81,7 @@ const DocumentList = ({
                 {expanded[document._id] && (
                     <DocumentList 
                         parentDocumentId={document._id}
-                        level={level + 1}
-                    />
+                        level={level + 1} data={[]}/>
                 )}
             </div>
         ))}

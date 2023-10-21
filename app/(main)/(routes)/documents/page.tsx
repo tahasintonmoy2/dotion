@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -10,11 +11,8 @@ import { api } from "@/convex/_generated/api";
 import { useRouter } from "next/navigation";
 
 const page = () => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { user } = useUser();
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const create = useMutation(api.documents.create)
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter()
 
   const onCreate = () => {
