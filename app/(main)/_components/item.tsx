@@ -174,7 +174,6 @@ export const Item = ({
   )
 }
 
-// eslint-disable-next-line react/display-name
 Item.Skeleton = function ItemSkeleton({level}: {level?: number}){
     return (
         <div

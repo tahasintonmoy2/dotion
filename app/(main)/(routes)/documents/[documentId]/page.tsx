@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 "use client"
 import {Cover} from '@/components/cover'
 import {Toolbar} from '@/components/toolbar'
@@ -19,12 +20,10 @@ const page = ({
 }: DocumentIdPageProps) => {
   const Editor = useMemo(() => dynamic(() => import("@/components/editor"), { ssr: false }) ,[]);
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const document = useQuery(api.documents.getById, {
     documentId: params.documentId
   })
   
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const update = useMutation(api.documents.update)
 
   const onChange = (content:string) => {

@@ -4,7 +4,6 @@ import {useParams} from 'next/navigation'
 import {useQuery} from 'convex/react';
 import { api } from '@/convex/_generated/api';
 import { Id } from '@/convex/_generated/dataModel';
-import { Spinner } from '@/components/spinner';
 import { MenuIcon } from 'lucide-react';
 import { Menu } from "./menu";
 import {Title} from './title';

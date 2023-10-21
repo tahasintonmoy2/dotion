@@ -1,12 +1,9 @@
 "use client";
-import { Command } from "cmdk";
 import React, { useState, useEffect } from "react";
 import { Button } from '@/components/ui/button'
-import Image from 'next/image'
-import Link from 'next/link'
-import { File, Settings, User } from "lucide-react";
+import { File, Settings } from "lucide-react";
 import { useQuery } from "convex/react";
-import { useUser, UserProfile } from "@clerk/clerk-react";
+import { useUser } from "@clerk/clerk-react";
 import { useRouter } from "next/navigation";
 import { api } from "@/convex/_generated/api";
 import { useSearch } from "@/hooks/use-search";
