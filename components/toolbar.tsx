@@ -135,7 +135,7 @@ export const Toolbar = ({
                 ref={inputRef}
                 onBlur={disableInput}
                 onKeyDown={onKeyDown}
-                placeholder={initialData.title}
+                value={initialData.title}
                 onChange={(e)=> onInput(e.target.value)}
                 className='text-5xl mx-10 bg-transparent font-bold break-words outline-none text-[#0f111a] dark:text-[#CFCFCF] resize-none'
             />
