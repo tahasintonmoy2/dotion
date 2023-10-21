@@ -7,7 +7,7 @@ const LandingPage = ({
     children: ReactNode
 }) => {
     return (
-        <div className="h-full dark:bg-[#0f111a]">
+        <div className="h-full dark:bg-[#020817]">
             <Navbar/>
             <main className="h-full pt-40">
                 {children}

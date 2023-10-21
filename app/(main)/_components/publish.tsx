@@ -67,7 +67,7 @@ const Publish = ({ initialData }: PublishProps) => {
   };
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center overflow-hidden">
       <Popover>
         <PopoverTrigger asChild>
           <Button size="sm" variant="ghost">

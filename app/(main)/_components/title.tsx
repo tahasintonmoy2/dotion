@@ -53,7 +53,7 @@ export const Title = ({
     }
 
   return (
-    <div className='flex items-center gap-x-1'>
+    <div className='flex items-center gap-x-1 overflow-hidden'>
         {!!initialData.icon && <p>{initialData.icon}</p> }
         {isEditing ? (
             <Input
@@ -63,7 +63,7 @@ export const Title = ({
             onChange={onChange}
             onKeyDown={onKeyDown}
             value={title}
-            className='h-8 px-2 focus-visible:ring-transparent' 
+            className='h-8 px-2 focus-visible:ring-transparent overflow-hidden' 
             />
         ):(
             <Button 
